@@ -1,10 +1,6 @@
 <svg width='512px' height='512px' xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink'>
 
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-23.310722,-36.596835)">
+
     <text
        xml:space="preserve"
        transform="scale(0.26458333)"
@@ -38,5 +34,5 @@
          id="tspan5348"><tspan
            style="font-family:FontAwesome;-inkscape-font-specification:FontAwesome"
            id="tspan5346">&#149; Benifit 4</tspan></tspan></text>
-  </g>
+
 </svg>
