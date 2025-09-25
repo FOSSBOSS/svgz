@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SVG Gallery</title>
+  <style>
+    body { font-family: sans-serif; }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>SVG Gallery</h1>
+  <div class="gallery" id="gallery"></div>
+
+  <script>
+    // GitHub Pages won't let you run server-side code,
+    // but you *can* keep a JSON list of your SVGs
+    // and update it automatically with a GitHub Action.
+    fetch('svgs.json')
+      .then(r => r.json())
+      .then(files => {
+        const gallery = document.getElementById('gallery');
+        files.forEach(f => {
+          const img = document.createElement('img');
+          img.src = f;
+          gallery.appendChild(img);
+        });
+      });
+  </script>
+</body>
+</html>
+
